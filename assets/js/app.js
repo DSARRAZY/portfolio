@@ -6,6 +6,7 @@
  */
 
 import $ from 'jquery';
+import anime from './home';
 
 // any CSS you import will output into a single css file (app.scss in this case)
 require('../scss/app.scss');

@@ -179,20 +179,49 @@ hr {
 }
 
 
-/* SOCIAL */
+/* ANIMATION */
 
-.social {
-    background-color: black;
+#animation {
+    background-color: #e38333;
+    height: 100px;
 }
 
-.social-icons {
-    padding: 50px 0;
-    font-size: 2.4rem;
+.ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.social-icons a {
-    color: #192233;
+.ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
 }
+
+.ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+@media (max-width: 480px) {
+    .letters{
+        font-size: 0.5em;
+        letter-spacing: 0.1em;
+        text-align : center;
+    }
+
+    .ml16{
+        line-height: 0.1em;
+    }
+}
+
 
 /* PORTFOLIO */
 
@@ -235,7 +264,7 @@ hr {
     border-top-right-radius: 4px;
 }
 
-/* PORTFOLIO */
+/* CONTACT */
 
 .contact {
     padding: 65px 0;
