@@ -93,84 +93,27 @@
                  <div class="row">
                      <div class="col-md-6 text-center m-auto">
                          <h3>PORTFOLIO</h3>
-                         <p>Some of my recent projects are listed below. For music projects visit my <a href="http://youtube.com/farhankk360" target="_blank">Youtube Channel</a>
-                             .Also Follow me on my social media, to stay up to date.</p>
+                         <p>Vous trouverez ici mes projets les plus récents</p>
                      </div>
                  </div>
                  <hr>
                  <div class="row">
 
+                    {% for project in projects %}
                      <div class="col-md-4 col-sm-6 portfolio-item">
                          <div class="card-shadow">
                              <a href="http://unitedgadgetstore.co.uk/" target="_blank">
                                  <img class="img-fluid" src="https://www.dropbox.com/s/myck2bpqut3vzqc/unitedgadgetstore-web.jpg?raw=1" alt="United Gadget Store - Web">
                                  <div class="portfolio-caption">
-                                     <h4>United Gadget Store</h4>
-                                     <p>E-Commerce Tech Store </p>
+                                     <h4>NOM DU PROJET : {{ project.name }}</h4>
+                                     <p>DESCRIPTION : {{ project.description}} <p>ANNEE : {{ project.year}}</p></p>
+                                     <p>LANGAGE(S) : {{ project.language}}</p>
+                                     <p>LIEN VERS LE PROJET : {{ project.link}}</p>
                                  </div>
                              </a>
                          </div>
                      </div>
-
-                     <div class="col-md-4 col-sm-6 portfolio-item">
-                         <div class="card-shadow">
-                             <a>
-                                 <img class="img-fluid" src="https://www.dropbox.com/s/0slveikavponrtu/unitedgadgetstore-app.jpg?raw=1" alt="United Gadget Store - App">
-                                 <div class="portfolio-caption">
-                                     <h4>United Gadget Store</h4>
-                                     <p><a href="https://itunes.apple.com/gb/app/united-gadget-store/id1358587618?mt=8" target="_blank" class="text-primary">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.farhan.unitedgadgetstore" target="_blank" class="text-primary">Android</a> app using Ionic 3 framework</p>
-                                 </div>
-                             </a>
-                         </div>
-                     </div>
-
-                     <div class="col-md-4 col-sm-6 portfolio-item">
-                         <div class="card-shadow">
-                             <a href="http://zamzamshawarma.com/" target="_blank">
-                                 <img class="img-fluid" src="https://www.dropbox.com/s/z5x3a2609wtqayx/zamzamshawarma-web.jpg?raw=1" alt="Zam Zam Shawarma Cuisine">
-                                 <div class="portfolio-caption">
-                                     <h4>Zam Zam Shawarma Cuisine</h4>
-                                     <p>Arabic food with online food ordering menu</p>
-                                 </div>
-                             </a>
-                         </div>
-                     </div>
-
-                     <div class="col-md-4 col-sm-6 portfolio-item">
-                         <div class="card-shadow">
-                             <a href="http://ultimatedealpizza.com/" target="_blank">
-                                 <img class="img-fluid" src="https://www.dropbox.com/s/nwyx9i2o6y3e0cn/ultimatedealpizza-web.jpg?raw=1" alt="Ultimate Deal Pizza">
-                                 <div class="portfolio-caption">
-                                     <h4>Ultimate Deal Pizza</h4>
-                                     <p >Pizza website, with online menu</p>
-                                 </div>
-                             </a>
-                         </div>
-                     </div>
-
-                     <div class="col-md-4 col-sm-6 portfolio-item">
-                         <div class="card-shadow">
-                             <a href="http://aghajanandcompany.com/" target="_blank">
-                                 <img class="img-fluid" src="https://www.dropbox.com/s/j0wbaoy37aw3i2w/aghajanandcompany.jpg?raw=1" alt="Agha Jan & Company">
-                                 <div class="portfolio-caption">
-                                     <h4>Agha Jan & Company</h4>
-                                     <p>Travel agency</p>
-                                 </div>
-                             </a>
-                         </div>
-                     </div>
-
-                     <div class="col-md-4 col-sm-6 portfolio-item">
-                         <div class="card-shadow">
-                             <a href="https://www.facebook.com/MrKhanProductions/videos/2241046861331/" target="_blank">
-                                 <img class="img-fluid" src="https://www.dropbox.com/s/zeuv1k0atj7smvq/theend-instrumental-ufc.jpg?raw=1" alt="The End - Epic Instrumental">
-                                 <div class="portfolio-caption">
-                                     <h4>The End Epic Instrumental</h4>
-                                     <p>Music Featured in UFC</p>
-                                 </div>
-                             </a>
-                         </div>
-                     </div>
+                    {% endfor %}
 
                  </div>
              </div>
