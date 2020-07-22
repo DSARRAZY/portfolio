@@ -1,9 +1,8 @@
 /*---------------------
        Home
 -----------------------*/
-
-p, h1, h2, h3, h4, h5 {
-    font-family: 'Heebo', sans-serif;
+*{
+    font-family: 'Permanent';
 }
 
 hr {
@@ -19,7 +18,7 @@ hr {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-.header {
+#header {
     background-image: url('../images/computer.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -52,19 +51,138 @@ hr {
     background-color: #fff;
 }
 
-.skills {
+/* SKILLS */
+
+#skills{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    text-justify:center;
+    padding : 2em;
+    margin-top: 50px;
+
     background-image: url('../images/learn.jpg');
     background-repeat: no-repeat;
+    background-attachment: scroll;
     background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover;
+    -o-background-size: cover;
+    color: #fff;
+    width: 100%;
 }
 
-.skills-text {
-    padding: 200px 0;
+.skills_container{
+    display: flex;
+
+    .skills_card{
+        flex: 1;
+        margin: 10px;
+        text-align: center;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+        border-radius: 20px;
+        overflow: hidden;
+
+        .title{
+            text-transform: uppercase;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 15px;
+            padding-bottom: 60px;
+            color: #ffffff;
+        }
+
+        .circle{
+            box-sizing: border-box;
+            font-size: 35px;
+            font-weight: bold;
+            background-color: #000000;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: -60px auto 0px auto;
+            z-index: 2;
+            position: relative;
+            box-shadow: inset 0px -10px 8px -8px  rgba(0,0,0,0.5);
+        }
+
+        .skills_content{
+            padding: 15px;
+            padding-top: 45px;
+            margin-top: -45px;
+            background-color: #ffffff;
+            box-shadow: 0px -4px 5px rgba(0,0,0,0.15);
+        }
+
+        .icon{
+            font-size: 50px;
+            display: grid;
+            justify-items: center;
+            justify-content: center;
+            text-justify:center;
+        }
+
+        &:nth-child(1){
+            .title, .circle{
+                background-color: #EF2F78;
+            }
+            .icon{
+                color: #EF2F78;
+            }
+        }
+        &:nth-child(2){
+            .title, .circle{
+                background-color: #03A1A4;
+            }
+            .icon{
+                color: #03A1A4;
+            }
+        }
+        &:nth-child(3){
+            .title, .circle{
+                background-color: #EF9523;
+            }
+            .icon{
+                color: #EF9523;
+            }
+        }
+        &:nth-child(4){
+            .title, .circle{
+                background-color: #1C7BBB;
+            }
+            .icon{
+                color: #1C7BBB;
+            }
+        }
+        &:nth-child(5){
+            .title, .circle{
+                background-color: #616161;
+            }
+            .icon{
+                color: #616161;
+            }
+        }
+    }
+
+    @media (max-width: 767px){
+        flex-wrap: wrap;
+
+        .skills_card{
+            flex: 0 0 100%;
+        }
+    }
 }
+
+
+/* SOCIAL */
 
 .social {
-    background-color: #e38333;
+    background-color: black;
 }
 
 .social-icons {
@@ -72,38 +190,8 @@ hr {
     font-size: 2.4rem;
 }
 
-.skills-bars {
-    padding: 140px 0;
-    text-transform: uppercase;
-}
-
-.progress {
-    height: 5px;
-    background-color: #192233;
-}
-
-.progress-bar {
-    background-color: #e38333;
-}
-
 .social-icons a {
     color: #192233;
-}
-
-.social-icons a i.fa-linkedin:hover {
-    color: #0e76a8;
-}
-
-.social-icons a i.fa-github:hover {
-    color: #fff;
-}
-
-.social-icons a i.fa-facebook:hover {
-    color: #3B5998;
-}
-
-.social-icons a i.fa-twitter:hover {
-    color: #1da1f2;
 }
 
 /* PORTFOLIO */

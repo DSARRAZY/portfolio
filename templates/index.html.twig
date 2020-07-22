@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
  {% block body %}
-     <section class="header">
+     <section id="header">
          <div class="container">
              <div class="row">
                  <div class="col-md-6">
@@ -33,36 +33,75 @@
                  </div>
              </div>
          </div>
+     </section>
 
-         <div class="skills">
-             <div class="container">
-                 <div class="row">
-                     <div class="col-md-6">
-                         <div class="skills-bars">
-                             <h3>Compétences progessionnelles</h3>
+     <section id="skills">
+         <div class="skills_container container">
 
-                             <h5 class="mt-4 mb-2">Web development &nbsp; &nbsp;75%</h5>
-                             <div class="progress mb-4">
-                                 <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                             </div>
-
-                             <h5 class="mt-4 mb-2">Music Production &nbsp; &nbsp;85%</h5>
-                             <div class="progress mb-4">
-                                 <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                             </div>
-
-                             <h5 class="mt-4 mb-2">Motion Graphics &nbsp; &nbsp;80%</h5>
-                             <div class="progress mb-4">
-                                 <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                             </div>
-
-                         </div>
+             <div class="card skills_card">
+                 <div class="title">
+                    HMTL 5
+                 </div>
+                 <div class="circle">1</div>
+                 <div class="skills_content">
+                     <div class="icon">
+                         <i class="fab fa-html5 fa-3x"></i>
                      </div>
+                 </div>
+             </div>
+
+             <div class="card skills_card">
+                 <div class="title">
+                   CSS
+                 </div>
+                 <div class="circle">2</div>
+                 <div class="skills_content">
+                     <div class="icon">
+                         <i class="fab fa-css3-alt fa-3x"></i>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="card skills_card">
+                 <div class="title">
+                     PHP
+                 </div>
+                 <div class="circle">3</div>
+                 <div class="skills_content">
+                     <div class="icon">
+                         <i class="fab fa-php fa-3x"></i>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="card skills_card">
+                 <div class="title">
+                     J.SCRIPT
+                 </div>
+                 <div class="circle">4</div>
+                 <div class="skills_content">
+                     <div class="icon">
+                         <i class="fab fa-js-square fa-3x"></i>
+                     </div>
+                  </div>
+               </div>
+
+         <div class="card skills_card">
+             <div class="title">
+                 GIT ET GITHUB
+             </div>
+             <div class="circle">5</div>
+             <div class="skills_content">
+                 <div class="icon">
+                     <i class="fab fa-git fa-3x"></i>
                  </div>
              </div>
          </div>
 
-         <div class="social">
+         </div>
+     </section>
+
+     <div class="social">
              <div class="container">
                  <div class="row text-center social-icons">
 
