@@ -24,7 +24,13 @@
     width: 20em;
 }
 
+.btn_save {
+  color : #e38333;
+}
 
+th, td {
+  color : #e38333;
+}
 
 /*---------------------
      INDEX PROJECT
@@ -36,7 +42,7 @@
   justify-items: center;
   justify-content: center;
   text-justify:center;
-  //background-image: url('../images/project.jpg');
+  background-image: url('../images/project.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
