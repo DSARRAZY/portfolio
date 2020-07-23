@@ -9,6 +9,8 @@ use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Vich\UploaderBundle\Form\Type\VichFileType;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class Project1Type extends AbstractType
 {
@@ -20,6 +22,12 @@ class Project1Type extends AbstractType
             ->add('year', IntegerType::class, ['label'=> 'Année du projet :'])
             ->add('description', TextareaType::class, ['label'=> 'Description :'])
             ->add('link', TextType::class, ['label'=> 'Lien vers le projet :'])
+            ->add('imageFile', VichImageType::class, [
+                'required'      => false,
+                'allow_delete'  => true, // not mandatory, default is true
+                'download_uri' => true, // not mandatory, default is true
+                'image_uri' => true
+            ])
         ;
     }
 

@@ -15,6 +15,7 @@
                 <th>Année</th>
                 <th>Description</th>
                 <th>Lien</th>
+                <th>Image</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -27,6 +28,7 @@
                 <td>{{ project.year }}</td>
                 <td>{{ project.description }}</td>
                 <td>{{ project.link }}</td>
+                <td>{{ project.image }}</td>
                 <td>
                     <a href="{{ path('project_show', {'id': project.id}) }}">Voir</a>
                     <a href="{{ path('project_edit', {'id': project.id}) }}">Modifier</a>
