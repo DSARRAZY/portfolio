@@ -130,13 +130,13 @@
                     {% for project in projects %}
                      <div class="col-md-4 col-sm-6 portfolio-item">
                          <div class="card-shadow">
-                             <a href="http://unitedgadgetstore.co.uk/" target="_blank">
-                                 <img class="img-fluid" src="https://www.dropbox.com/s/myck2bpqut3vzqc/unitedgadgetstore-web.jpg?raw=1" alt="United Gadget Store - Web">
+                                 <img class="img-fluid" src="{{ asset ('/uploads/' ~ project.image) }}" alt="Image du projet">
                                  <div class="portfolio-caption">
                                      <h4>NOM DU PROJET : {{ project.name }}</h4>
                                      <p>DESCRIPTION : {{ project.description}} <p>ANNEE : {{ project.year}}</p></p>
                                      <p>LANGAGE(S) : {{ project.language}}</p>
-                                     <p>LIEN VERS LE PROJET : {{ project.link}}</p>
+                                     <p>LIEN VERS LE PROJET : </p>
+                                     <a href="{{ project.link}}" target="_blank" class="btn btn-outline-secondary mb-2" role="button">J'y vais !</a>
                                  </div>
                              </a>
                          </div>
