@@ -1,19 +1,20 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Project index{% endblock %}
+{% block title %}Liste des projets{% endblock %}
 
 {% block body %}
-    <h1>Project index</h1>
+<section id="index_project">
+    <h1>Liste des projets</h1>
 
     <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Name</th>
-                <th>Language</th>
-                <th>Year</th>
+                <th>Nom</th>
+                <th>Langage</th>
+                <th>Année</th>
                 <th>Description</th>
-                <th>Link</th>
+                <th>Lien</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -27,17 +28,18 @@
                 <td>{{ project.description }}</td>
                 <td>{{ project.link }}</td>
                 <td>
-                    <a href="{{ path('project_show', {'id': project.id}) }}">show</a>
-                    <a href="{{ path('project_edit', {'id': project.id}) }}">edit</a>
+                    <a href="{{ path('project_show', {'id': project.id}) }}">Voir</a>
+                    <a href="{{ path('project_edit', {'id': project.id}) }}">Modifier</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="7">no records found</td>
+                <td colspan="7">Pas d'enregistrement trouvé</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('project_new') }}">Create new</a>
+    <a href="{{ path('project_new') }}">Nouveau projet</a>
+</section>
 {% endblock %}

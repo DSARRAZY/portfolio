@@ -1,0 +1,121 @@
+/*---------------------
+       NEW PROJECT
+-----------------------*/
+
+#new_project {
+    padding : 4em;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    text-justify:center;
+    background-image: url('../images/project.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: #e38333;
+    width: 100%;
+}
+
+.project_form {
+    width: 20em;
+}
+
+
+
+/*---------------------
+     INDEX PROJECT
+-----------------------*/
+
+#index_project {
+  padding : 4em;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  text-justify:center;
+  background-image: url('../images/project.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: #e38333;
+  width: 100%;
+}
+
+.project_form {
+  width: 40em;
+}
+
+/*---------------------
+     SHOW PROJECT
+-----------------------*/
+
+#show_project {
+  padding : 4em;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  text-justify:center;
+  background-image: url('../images/project.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: #e38333;
+  width: 100%;
+}
+
+.project_form {
+  width: 40em;
+}
+
+@media only screen and (max-width: 750px) {
+  .project_form {
+    width: 20em;
+  }
+
+  #show_project {
+    width: 20em;
+  }
+}
+
+/*---------------------
+     EDIT PROJECT
+-----------------------*/
+
+#edit_project {
+  padding : 4em;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  text-justify:center;
+  background-image: url('../images/project.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: #e38333;
+  width: 100%;
+}
+
+.project_form {
+  width: 40em;
+}
+
+@media only screen and (max-width: 750px) {
+  .project_form {
+    width: 20em;
+  }
+}
