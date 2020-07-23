@@ -20,7 +20,7 @@
 
      <!-- ABOUT -->
 
-     <section class="aboutMe_section">
+     <section id="about">
          <div class="container">
              <div class="row justify-content-center">
                  <div class="col-md-12 col-md-offset-2">
@@ -115,6 +115,18 @@
              </div>
          </div>
 
+             <div class="card skills_card">
+                 <div class="title">
+                     LINUX
+                 </div>
+                 <div class="circle">6</div>
+                 <div class="skills_content">
+                     <div class="icon">
+                         <i class="fab fa-linux fa-3x"></i>
+                     </div>
+                 </div>
+             </div>
+
          </div>
      </section>
 
@@ -144,7 +156,7 @@
 
                     {% for project in projects %}
                      <div class="col-md-4 col-sm-6 portfolio-item">
-                         <div class="card-shadow">
+                         <div class="card-shadow h-100">
                                  <img class="img-fluid" src="{{ asset ('/uploads/' ~ project.image) }}" alt="Image du projet">
                                  <div class="portfolio-caption">
                                      <h4>NOM DU PROJET : {{ project.name }}</h4>
