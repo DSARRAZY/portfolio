@@ -216,7 +216,14 @@
 </section>
 
      <!-- CONTACT -->
+<section id="contact">
+     {{ form_start(form) }}
+     {{ form_widget(form) }}
+     <button class="btn btn-success">{{ button_label|default('Envoyer') }}</button>
+     {{ form_end(form) }}
+</section>
 
+     {#
      <section id="contact">
          <div class="contact">
              <div class="container">
@@ -230,17 +237,21 @@
                  <form action="" class="text-center">
                      <div class="form-row">
                          <div class="form-group col-md-6">
-                             <input type="text" class="form-control form-control-lg" placeholder="Nom" required>
+                             <label for="name"></label>
+                             <input type="text" class="form-control form-control-lg" name="name" id="name" placeholder="Nom" required>
                          </div>
                          <div class="form-group col-md-6 ">
-                             <input type="email" class="form-control form-control-lg" placeholder="Email" required>
+                             <label for="email"></label>
+                             <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="Email" required>
                          </div>
                      </div>
                      <div class="form-group">
-                         <input type="text" class="form-control form-control-lg" placeholder="Sujet" required >
+                         <label for="subject"></label>
+                         <input type="text" class="form-control form-control-lg" name="subject" id="subject" placeholder="Sujet" required >
                      </div>
                      <div class="form-group">
-                         <textarea class="form-control form-control-lg" placeholder="Message" rows="6" required></textarea>
+                         <label for="message"></label>
+                         <textarea class="form-control form-control-lg" name="message" id="message" placeholder="Message" rows="6" required></textarea>
                      </div>
                      <button type="submit" class="btn btn-warning form-button">Envoyer</button>
                  </form>
@@ -248,4 +259,5 @@
              </div>
          </div>
      </section>
+     #}
  {% endblock %}
