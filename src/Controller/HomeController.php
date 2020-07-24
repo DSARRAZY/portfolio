@@ -34,8 +34,7 @@ class HomeController extends AbstractController
                 ->subject("Vous avez reçu un email d'un visiteur !")
                 ->html($this->renderView('mail/mail.html.twig',[
                         'contact' => $contact
-                    ]
-                ));
+                ]));
 
             $mailer->send($email);
 
@@ -45,7 +44,7 @@ class HomeController extends AbstractController
 
         return $this->render('index.html.twig', [
             'projects' => $project->findAll(),
-            'form' => $form->createView()
+            'form' => $form->createView(),
         ]);
     }
 }
